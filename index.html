@@ -12,11 +12,11 @@
     <fieldset> 
     <legend>Contact Information</legend> 
         <label for="salutation">Mr.</label><br>
-        <input type="radio" name="salutation"><br>
+        <input type="radio" name="salutation" id="salutation"><br>
         <label for='salutation'>Ms.</label><br>
-        <input type="radio" name="salutation"><br>
+        <input type="radio" name="salutation" id="salutation"><br>
         <label for="salutation">Mrs.</label><br>
-        <input type="radio" name="salutation"><br>
+        <input type="radio" name="salutation" id="salutation"><br>
             <label for="name">Name</label>
             <input type="textbox" required id="name"><br>
             <label for="email">Email</label>
@@ -26,18 +26,19 @@
 <form>
 <fieldset>
 <legend>Payment Information</legend>
-    <select>
+<label for="credit-card"></label>
+    <select id="credit-card">
     <optgroup>
-        <option value="visa">Visa</option>
-        <option value="mc">MasterCard</option>
-        <option value="amex">American Express</option>
-        <option value="discover">Discover</option>
+        <option label="Visa" id="visa"></option>
+        <option label="Master Card" id="mc"></option>
+        <option label="American Express" id="amex"></option>
+        <option label="Discover" id="discover"></option>
     </optgroup>
 </select>
     <label for="card-number">Credit Card Number</label><br>
-    <input type="tel" required placeholder="xxxx xxxx xxxx xxxx" name="card-number"><br>
+    <input type="tel" required placeholder="xxxx xxxx xxxx xxxx" id="card-number"><br>
 <label for="expiration">Expiration Date</label><br>
-<input type="textbox" name="expiration" required>
+<input type="textbox" name="expiration" id="expiration" required>
 </fieldset>
 </form>
 <input type="submit" value="Submit Payment">
