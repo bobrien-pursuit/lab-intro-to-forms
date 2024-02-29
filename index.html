@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Payment Form</title>
 </head>
 <body>
     <h1>Payment Form</h1>
-<h2>Required fields are marked by *</h2>
+<p>Required fields are marked by *</p>
 <form class="contact-form">
-<h2>Contact Information</h2> 
-    <label for="salutation">Mr.</label>
-    <input type="radio" id="salutation" checked>
-    <label for='salutation'>Ms.</label>
-    <input type="radio" id="salutation">
-    <label for="salutation">Mrs.</label>
-    <input type="radio" id="salutation">
-        <label for="name">Name</label>
-        <input type="textbox" required id="name">
-        <label for="email">Email</label>
-        <input type="textbox" required id="email">
+    <fieldset> 
+    <legend>Contact Information</legend> 
+        <label for="salutation">Mr.</label><br>
+        <input type="radio" name="salutation"><br>
+        <label for='salutation'>Ms.</label><br>
+        <input type="radio" name="salutation"><br>
+        <label for="salutation">Mrs.</label><br>
+        <input type="radio" name="salutation"><br>
+            <label for="name">Name</label>
+            <input type="textbox" required id="name"><br>
+            <label for="email">Email</label>
+            <input type="textbox" required id="email"><br>
+    </fieldset>
 </form>
-<h2>Payment Information</h2>
-<form class="form-payment">
-<select>
+<form>
+<fieldset>
+<legend>Payment Information</legend>
+    <select>
     <optgroup>
         <option value="visa">Visa</option>
         <option value="mc">MasterCard</option>
@@ -32,13 +34,12 @@
         <option value="discover">Discover</option>
     </optgroup>
 </select>
-    <label for="card-number">Credit Card Number</label>
-    <div class="contact-form">
-    <input type="tel" required placeholder="xxxx xxxx xxxx xxxx">
-<label for="expiration">Expiration Date</label>
-<input type="textbox" id="expiration" required>
-</div>
-<input type="submit" value="Submit Payment">
+    <label for="card-number">Credit Card Number</label><br>
+    <input type="tel" required placeholder="xxxx xxxx xxxx xxxx" name="card-number"><br>
+<label for="expiration">Expiration Date</label><br>
+<input type="textbox" name="expiration" required>
+</fieldset>
 </form>
+<input type="submit" value="Submit Payment">
 </body>
 </html>
